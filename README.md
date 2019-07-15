@@ -61,3 +61,10 @@ K-----|--A
 Expected result: 
 - Letters ```BEEFCAKE```
 - Path as characters ```@---+B||E--+|E|+--F--+|C|||A--|-----K|||+--E--Ex```
+
+
+# How to run solution
+
+- Depending on your Windows version download Zip file from Release folder
+- Run EXE file 
+- Input path to ASCI map file 
