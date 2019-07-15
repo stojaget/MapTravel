@@ -72,4 +72,4 @@ Expected result:
 
 - Depending on your Windows version download Zip file from Release folder
 - Run EXE file 
-- Input path to ASCI map file 
+- Input path to ASCII map file 
