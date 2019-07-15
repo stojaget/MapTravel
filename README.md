@@ -62,6 +62,11 @@ Expected result:
 - Letters ```BEEFCAKE```
 - Path as characters ```@---+B||E--+|E|+--F--+|C|||A--|-----K|||+--E--Ex```
 
+# Tools used
+
+- Visual Studio 2017
+- .NET Core 2.2
+- MSTest for test project
 
 # How to run solution
 
