@@ -7,7 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapTravel.UI", "MapTravel\M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapTravel.BL", "MapTravel.BL\MapTravel.BL.csproj", "{2271B95E-75E3-46C0-BC9A-52DAAD6135C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapTravel.Testing", "MapTravel.Testing\MapTravel.Testing.csproj", "{9CBCDCC3-11A8-43F4-B91B-D416FE2FA45B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapTravel.Testing", "MapTravel.Testing\MapTravel.Testing.csproj", "{9CBCDCC3-11A8-43F4-B91B-D416FE2FA45B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestMaps", "TestMaps", "{F001F69F-0D79-4807-B4C8-DD003A0CF5E3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\deploy\FirstTravelMap.txt = ..\..\..\..\..\deploy\FirstTravelMap.txt
+		..\..\..\..\..\deploy\SecondTravelMap.txt = ..\..\..\..\..\deploy\SecondTravelMap.txt
+		..\..\..\..\..\deploy\ThirdTravelMap.txt = ..\..\..\..\..\deploy\ThirdTravelMap.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
