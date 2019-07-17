@@ -11,7 +11,7 @@ namespace MapTravel
             Console.WriteLine("WELCOME TO ASCII MAP TRAVEL SOFTWARE");
             Console.WriteLine("Please input file path (ex. C:\\Documents\\TravelMap.txt) and we will find letters and the path for you");
             string pathToFile = Console.ReadLine();
-           // string pathToFile = @"c:\\deploy\\PathTravelMap.txt";
+            // string pathToFile = @"c:\deploy\FirstTravelMap.txt";
             string inputString;
             try
             {
@@ -23,16 +23,16 @@ namespace MapTravel
                 }
                 ProcessInputMap(inputString);
                 Console.ReadLine();
-              
+
             }
             catch (Exception)
             {
 
                 Console.WriteLine("Error occured during file opening, please try again...");
-                return; 
+                return;
             }
 
-         
+
         }
 
         private static void ProcessInputMap(string inputString)
@@ -50,16 +50,26 @@ namespace MapTravel
         }
 
         /// <summary>
-        /// Read all text from file
+        /// Read all text from file 
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
         private static string HelperReadAllText(string path)
         {
-            string resultString;
-            using (StreamReader streamReader = new StreamReader(path))
+            string resultString = "";
+            try
             {
-                resultString = streamReader.ReadToEnd();
+                if (File.Exists(path))
+                {
+                    using (StreamReader streamReader = new StreamReader(path))
+                    {
+                        resultString = streamReader.ReadToEnd();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw new MapException("Please input valid path to file with ASCII map...");
             }
             return resultString;
         }
